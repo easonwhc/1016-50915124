@@ -1,0 +1,136 @@
+body {
+    background-color: #d8e0e6;
+    /* 选择一个你喜欢的颜色 */
+}
+
+
+.carousel {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+
+.slider-container {
+    margin-bottom: 30px;
+    /* 为滑块添加下边距 */
+}
+
+
+.gradient-line {
+    height: 5px;
+    /* 设置线的初始高度 */
+    background: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+    /* 设置初始渐变颜色 */
+    background-size: 300% 100%;
+    /* 增加背景的大小以支持动画 */
+    animation: gradient-animation 5s ease infinite;
+    /* 应用动画 */
+    margin: 30px 0;
+    /* 设置上下间距 */
+    border-radius: 2px;
+    /* 添加圆角效果（可选） */
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+        /* 从左侧开始 */
+    }
+
+    50% {
+        background-position: 100% 50%;
+        /* 到达右侧 */
+    }
+
+    100% {
+        background-position: 0% 50%;
+        /* 回到左侧 */
+    }
+}
+
+#about-me {
+    background-color: #f8f9fa;
+    /* 背景颜色 */
+    padding: 30px;
+    border-radius: 10px;
+    /* 圓角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 陰影效果 */
+}
+
+#about-me h2 {
+    color: #343a40;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about-me p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+/* 卡片容器居中并控制宽度 */
+.card-container {
+    max-width: 1140px;
+    margin: 50px auto;
+    /* 保持居中并添加上边距 */
+    margin-top: 30px;
+    /* 添加额外的上边距 */
+}
+
+
+/* 让所有卡片的高度一致 */
+.card {
+    min-height: 300px;
+    /* 设置最小高度 */
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    /* 保持卡片内容的垂直排列 */
+}
+
+.card-body {
+    flex-grow: 1;
+    /* 确保卡片内容撑开卡片 */
+}
+
+/* 统一图片大小 */
+.card-img-top {
+    width: 100%;
+    /* 图片宽度占满卡片宽度 */
+    height: 200px;
+    /* 固定图片高度 */
+    object-fit: cover;
+    /* 确保图片以填充方式裁剪，避免拉伸 */
+    cursor: pointer;
+    /* 鼠标指针变为手形，表示可点击 */
+}
+
+.text-center {
+    display: flex;
+    /* 使用 flexbox */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中（可选） */
+    height: 100%;
+    /* 确保内容高度填满父容器 */
+}
+
+/* 固定页脚在页面底部 */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
